@@ -68,8 +68,18 @@ module.exports = function(app, passport) {
     }));
 
     app.get('/doc', isLoggedIn,function(req, res)  {
-       console.log(req);
+       //console.log(req);
        //console.log(res);
+       // load up the user model
+       var User            = require('../app/models/user');
+       User.find({}, function(err, users) {
+       if (err) throw err;
+
+        // object of all the users
+        //var all = JSON.parse(users);
+        console.log(users[1].local.email);
+        });
+
        res.render('docs.ejs', { message: req.flash('signupMessage') });
     });
 
