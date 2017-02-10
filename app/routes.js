@@ -69,7 +69,7 @@ module.exports = function(app, passport) {
 
     app.get('/doc', isLoggedIn,function(req, res)  {
        console.log(req);
-       console.log(res);
+       //console.log(res);
        res.render('docs.ejs', { message: req.flash('signupMessage') });
     });
 
