@@ -67,7 +67,11 @@ module.exports = function(app, passport) {
         failureFlash : true // allow flash messages
     }));
 
-
+    app.get('/doc', isLoggedIn,function(req, res)  {
+       console.log(req);
+       console.log(res);
+       res.render('docs.ejs', { message: req.flash('signupMessage') });
+    });
 
 
 };
