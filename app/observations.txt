@@ -1,0 +1,11 @@
+
+//install nodejs6.X
+http://askubuntu.com/questions/594656/how-to-install-the-latest-versions-of-nodejs-and-npm-for-ubuntu-14-04-lts
+
+
+// send email
+https://www.quora.com/How-can-you-send-a-password-email-verification-link-using-NodeJS-1
+http://www.mailgun.com/pricing
+https://github.com/bojand/mailgun-js
+npm install maigun-js
+
